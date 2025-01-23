@@ -8,8 +8,17 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body {
+    
+}
 
-
+/*CSS do cabeçalho*/
+header {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(226, 240, 253, 0.849));
+}
+nav {
+    margin-top: 10px;
+}
 .container {
     display: flex;
     flex-flow: row nowrap;
@@ -27,77 +36,67 @@
     text-align: center;
 }
 
+/*CSS dos links de navegação*/
 
 
-
-
-
-
-
-/* Todas as demais midias */
-
-@media screen and (max-width: 600px) { /* Smartphones */
-    li {
-        width: 100%;
-        background-color: #e9eaec9f;
-        margin-bottom: 5px;
-        text-align: center;
-        color: black;
-        border-radius: 3px;
-    }
-    li:hover {
-        background-color: #fafdff;
-        border: 1px solid black;
-        border-radius: 5px;
-        box-shadow: 0px 1px 10px rgb(201, 201, 206);
-        transition: 0.3s;
-        color: white;
-    }
-}
-
-
-
-
-
-
-
-
-
-/* TABLET */
-@media screen and (min-width: 600px)/* and (max-width: 992px)*/ {
-    li {
-        background-color: #e9eaec9f;
-        margin-bottom: 5px;
-        margin-right: 5px;
-        text-align: center;
-        color: black;
-        border-radius: 3px;
-    }
-    li:hover {
-        background-color: #fafdff;
-        border: 1px solid black;
-        border-radius: 5px;
-        box-shadow: 0px 1px 10px rgba(56, 137, 243, 0.507);
-        transition: 0.3s;
-        color: white;
-    }
+li {
+    list-style-type: none;
     
-    form {
-        margin-top: 15px;
-    }
 }
 
 
 
-/* DESKTOP */
-@media screen and (min-width: 992PX) and (max-width: 1200PX) {
 
+/*CSS do menu*/
+
+#burguer {
+    display: block;
+    background-color: rgba(229, 235, 241, 0.699);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+#burguer:hover {
+    background-color: #FAFDFF;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+menu {
+    display: none;
+}
+
+
+span:hover {
+    color: rgb(0, 81, 255);
+}
+.swap:hover {
+    color: rgb(230, 230, 230);
+}
+
+.li-container:hover{
+    color: rgb(0, 81, 255);
+}
+
+
+/* CSS seção destaque */
+
+#banner-destaque {
+    background-image: url('../imagens/banner-destaque-pq.jpg');
 }
 
 
 
-/* GRANDES TELAS */
-@media screen and (min-width: 1200PX) {
 
 
-}
+
+
+
+
+
+
+
+
+

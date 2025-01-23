@@ -5,30 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nome da Agência de Viagens</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-media-query.css">
 
 
 
     <!--Link Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+
+    <!--LINK GOOGLE ICONS-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
 </head>
 <body>
 
-    <header class="p-3 mb-3 border-bottom ">
+    <header class="p-3 mb-3 border-bottom">
         <div class="container">
             <div class="item-img">
                 <a href="#">
-                    <img  src="../imagens/logo.png" class="img-fluid" width="150px" alt="">
+                    <img  src="../imagens/logo.png" class="img-fluid" width="130px" alt="">
                 </a>
             </div>
 
             <div class="dropdown">
-                <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="../imagens/img-perfil.jpg" alt="mdo" width="40" height="40" class="rounded-circle">
+                <a href="#" class="d-block  text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="profile">
+                    <span class="material-symbols-outlined" title="Acessar Perfil" style="font-size: 2em; color: rgb(0, 0, 0);">
+                        account_circle
+                    </span>
                 </a>
+
                 <ul class="dropdown-menu text-small">
                     <li>
-                        <a class="dropdown-item" href="#" style="vertical-align: inherit;" style="vertical-align: inherit;">Novo projeto...</a>
+                        <a class="dropdown-item" href="#" style="vertical-align: inherit;" style="vertical-align: inherit;">Minhas Viagens</a>
                     </li>
                     <li>
                         <a class="dropdown-item" href="#" style="vertical-align: inherit;" style="vertical-align: inherit;">Configurações</a>
@@ -42,37 +50,334 @@
                     </li>
                 </ul>
             </div>
-            
         </div>
-       
 
-        <nav class="container">
-            <div class="container-link">
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0">
-                    <li>
-                        <a href="Home.html" class="nav-link px-4 text-dark link-body-emphasis" target="_blank">Início</a>
-                    </li>
-                    <li>
-                        <a href="Destinos.html" class="nav-link px-4 link-body-emphasis" style="vertical-align: inherit;" target="_blank">Destinos</a>
-                    </li>
-                    <li>
-                        <a href="Pacotes-Viagens.html" class="nav-link px-4 link-body-emphasis" style="vertical-align: inherit;" target="_blank">Pacotes de Viagem</a>
-                    </li>
-                    <li>
-                        <a href="Servicos.html" class="nav-link px-4 link-body-emphasis" style="vertical-align: inherit;" target="_blank">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="Sobre-Nós.html" class="nav-link px-4 link-body-emphasis" style="vertical-align: inherit;" target="_blank">Sobre Nós</a>
-                    </li>
+        <nav>
+            <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()" style="font-size: 28px;">menu</i>
+            <menu id="itens">
+                <div class="container container-menu">
+                    <ul class=" container-ul">
+                        <li class="li-container">    
+                            <a href="Home.html" class="anchor-nav" target="_blank">
+                                <span class="material-symbols-outlined" style="font-size: 1.8em;">
+                                    home
+                                </span><br>
+                                Início
+                            </a>  
+                        </li>
+                        <li class="li-container">
+                            <a href="Destinos.html" class="anchor-nav" style="vertical-align: inherit;" target="_blank">
+                                <span class="material-symbols-outlined" style="font-size: 1.8em;">
+                                    travel
+                                </span><br>
+                                Destinos
+                            </a>
+                        </li>
+                        <li class="li-container">
+                            <a href="Pacotes-Viagens.html" class="anchor-nav" target="_blank">
+                                <span class="material-symbols-outlined" style="font-size: 1.8em;">
+                                    trip
+                                </span><br>
+                                Pacotes de Viagem
+                            </a>
+                        </li>
+                        <li class="li-container">
+                            <a href="Alugueis.html" class="anchor-nav" target="_blank">
+                                <span class="material-symbols-outlined" style="font-size: 1.8em;">
+                                    location_away
+                                </span><br>
+                                Aluguéis
+                            </a>
+                        </li>
+                        <li class="li-container">
+                            <a href="Carros.html" class="anchor-nav" target="_blank">
+                                <span class="material-symbols-outlined" style="font-size: 1.8em;">
+                                    directions_car
+                                </span><br>
+                                Carros
+                            </a>
+                        </li>
+                        <li class="li-container">
+                            <a href="Servicos.html" class="anchor-nav" target="_blank">
+                                <span class="material-symbols-outlined" style="font-size: 1.8em;">
+                                    concierge
+                                </span><br>
+                                Serviços
+                            </a>
+                        </li>
+                        <li class="li-container">
+                            <a href="Sobre-Nós.html" class="anchor-nav"  target="_blank">
+                                <span class="material-symbols-outlined" style="font-size: 1.8em;">
+                                    info
+                                </span><br>
+                                Sobre Nós
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </menu>
+        </nav>
+    </header>
+
+
+
+    <main>
+        
+        <!-- Seção de Destaque -->
+
+        <section id="banner-destaque" class="col">
+            <div class="pt-5">
+                <h1>Descubra o Mundo com a Gente!</h1>
+                <p>Planeje sua próxima aventura com nossa agência. Oferecemos pacotes incríveis, destinos de tirar o fôlego e experiências inesquecíveis. Seu sonho começa aqui!</p>
+            </div>
+        </section>
+
+        <section class="destaque">
+            <h2>Passagens aéreas</h2>
+            <div class="div-container">
+                <button class="button" type="button">
+                    <a class="linkbutton" href="#destinos" >Ida e Volta</a>
+                </button>
+                <button class="button" type="button">
+                    <a href="#destinos" class="linkbutton">Só ida</a>
+                </button>
+                <button class="button" type="button">
+                    <a href="#destinos" class="linkbutton">Multidestino</a>
+                </button>
+            </div>
+
+            <div>
+                <form action="">
+                    <div class="container-form container">
+                        <div class="container row">
+                            <label for="" class="col">Origem</label>
+                            <input type="text" name="" id="" placeholder="   São Paulo, SP" class="col-8 label-form"><br>
+                        </div>
+
+                        <div class="button-form">
+                            <button type="button" id="button-form" title="Alternar para Destino x Origem">
+                                <span class="material-symbols-outlined swap">
+                                    swap_vert
+                                    </span>
+                            </button>
+                        </div>
+
+                        <div class="container row">
+                            <label for="" class="col">Destino</label>
+                            <input type="text" name="" id="" placeholder="   Insira sua cidade de destino" class="col-8 label-form">
+                        </div>
+                        
+                        
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- Seção de Cupons -->
+        <section>
+            <h2>Cupons de Desconto Imperdiveis</h2>
+            <div class="container-cupons">
+                <div class="item-cupom">
+                    <img src="../imagens/cupom1.jpg" alt="Cupom de desconto" width="300px" class="img-fluid">
+                </div>
+                <div class="item-cupom">
+                    <img src="../imagens/cupom2.jpg" alt="Cupom de desconto" width="300px" class="img-fluid">
+                </div>
+            </div>
+        </section>
+    
+        <!-- Seção de Destinos -->
+        <section class="destinos">
+            <h2>Destinos Populares</h2>
+            <div class="grid-destinos">
+                <article class="item-destino card" style="text-align: left;">
+                    <a href="#" class="link-destino">
+                        <img src="../imagens/img-paris.jpg" alt="Torre Eiffel, Paris" width="400px" class="img-fluid" title="Paris, França">
+                        <h3>Paris, França</h3>
+                        
+                    </a>
+
+                    <p>Descubra a cidade da luz e do romance.</p>
+                    <div style="padding-bottom: 20px; padding-left: 15px;" class="container-small">
+                        <small style="color: rgba(0, 0, 0, 0.705);" >
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span>
+                                Aéreo Ida e Volta <br>
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span> Voo direto <br>
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span> Saída: 10/10/2020
+                            <br><br><br>
+                            a partir de <br>
+                             <b style="font-size: 1.2em;">R$</b>
+                             <b style="font-size: 1.6em;">699,99</b>
+                        </small>
+                        <button class="button-destino" type="button">Confira</button>
+                    </div>
+                    
+                </article>
+                <article class="item-destino card" style="text-align: left;">
+                    <a href="#" class="link-destino">
+                        <img src="../imagens/img-maldivas.jpg" alt="Praias das Maldivas" width="400px" class="img-fluid" title="Praia das Maldivas">
+                        <h3>Maldivas</h3>
+                    </a>
+                    <p>Relaxe em praias paradisíacas.</p>
+
+                    <div style="padding-bottom: 20px; padding-left: 15px;" class="container-small">
+                        <small style="color: rgba(0, 0, 0, 0.705);" >
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span>
+                                Aéreo Ida e Volta <br>
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span> Voo direto <br>
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span> Saída: 10/10/2020
+                            <br><br><br>
+                            a partir de <br>
+                             <b style="font-size: 1.2em;">R$</b>
+                             <b style="font-size: 1.6em;">799,99</b>
+                        </small>
+                        <button class="button-destino" type="button">Confira</button>
+                    </div>
+                </article>
+                <article class="item-destino card" style="text-align: left;">
+                    <a href="#" class="link-destino">
+                        <img src="../imagens/img-novayork.jpg" alt="Nova York, EUA" width="400px" class="img-fluid" title="Nova York, EUA">
+                        <h3>Nova York, EUA</h3>
+                    </a>
+                    <p>A cidade que nunca dorme espera por você.</p>
+
+                    <div style="padding-bottom: 20px; padding-left: 15px;" class="container-small">
+                        <small style="color: rgba(0, 0, 0, 0.705);" >
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span>
+                                Aéreo Ida e Volta <br>
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span> Voo direto <br>
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span> Saída: 10/10/2020
+                            <br><br><br>
+                            a partir de <br>
+                             <b style="font-size: 1.2em;">R$</b>
+                             <b style="font-size: 1.6em;">749,99</b>
+                        </small>
+                        <button class="button-destino" type="button">Confira</button>
+                    </div>
+                </article>
+                <article class="item-destino card" style="text-align: left;">
+                    <a href="#" class="link-destino">
+                        <img src="../imagens/img-rio.jpg" alt="Rio de Janeiro, BR" width="400px" class="img-fluid" title="Foto de Nova York">
+                        <h3>Rio de Janeiro, BR</h3>
+                    </a>
+                    <p>Relaxe com paisagens paradisíacas,<br> além das belas praias na cidade maravilhosa.</p>
+
+                    <div style="padding-bottom: 20px; padding-left: 15px;" class="container-small">
+                        <small style="color: rgba(0, 0, 0, 0.705);" >
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span>
+                                Aéreo Ida e Volta <br>
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span> Voo direto <br>
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span> Saída: 10/10/2020
+                            <br><br><br>
+                            a partir de <br>
+                             <b style="font-size: 1.2em;">R$</b>
+                             <b style="font-size: 1.6em;">759,99</b>
+                        </small>
+                        <button class="button-destino" type="button">Confira</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="container">
+                <a href="#">
+                    Veja mais
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </a>
+            </div>
+        </section>
+    
+        <!-- Seção de Serviços -->
+        <section id="servicos" class="container">
+            <div >
+                <h2 class="item-service">Nossos Serviços</h2>
+                <ul class="item-service">
+                    <li>Planejamento de viagens personalizadas</li>
+                    Transformamos seus sonhos em realidade com roteiros feitos sob medida! Nossa equipe dedica atenção especial aos seus gostos, preferências e orçamento, criando viagens únicas e inesquecíveis.
+
+                    O que oferecemos:
+
+                    Consultoria personalizada: Entendemos suas necessidades para planejar cada detalhe.
+
+                    Roteiros exclusivos: Itinerários criados com base nos seus interesses.
+                    Suporte completo: Assistência antes, durante e após a sua viagem.
+
+                    Parcerias de confiança: Trabalhamos com os melhores hotéis, companhias aéreas e guias locais para garantir sua satisfação.
+
+                    Descubra o mundo do seu jeito, no seu ritmo. Viaje com conforto, segurança e experiências que serão lembradas para sempre.
+                    
+                    <li>Pacotes turísticos exclusivos</li>
+                    Viaje com estilo e descubra destinos únicos com nossos pacotes turísticos exclusivos! Cada detalhe é cuidadosamente planejado para oferecer experiências diferenciadas, que combinam conforto, cultura e aventura.
+                    Por que escolher nossos pacotes?
+                    Destinos selecionados: Roteiros para os lugares mais incríveis e desejados do mundo.
+                    Experiências exclusivas: Passeios personalizados, acesso a atrações especiais e momentos inesquecíveis.
+                    Conforto garantido: Hospedagem em acomodações premium e transporte de qualidade.
+                    Atendimento dedicado: Equipe pronta para cuidar de tudo, para que você só precise aproveitar.
+                    Descubra o melhor que o mundo tem a oferecer com pacotes feitos para quem busca o extraordinário. Viaje mais, viva mais!
+                    <li>Reservas de voos, hotéis e passeios</li>
+                    Organize sua viagem com praticidade e segurança! Oferecemos um serviço completo de reservas para que você tenha tudo planejado em um só lugar.
+                    O que fazemos por você:
+                    Reservamos os melhores voos com as tarifas mais competitivas.
+                    Escolhemos hotéis que combinam conforto, localização e preço.
+                    Planejamos passeios que tornam sua viagem única e inesquecível.
+                    Deixe os detalhes conosco e aproveite sua viagem sem preocupações!
+                    <li>Consultoria com especialistas</li>
+                    Viajar é mais fácil com a orientação certa! Nossa consultoria com especialistas em viagens garante que você tenha o roteiro perfeito para suas necessidades e desejos.
+                    Por que contar com nossos especialistas?
+                    Conhecimento profundo sobre destinos ao redor do mundo.
+                    Planejamento personalizado para atender às suas expectativas.
+                    Dicas e orientações que tornam sua experiência mais segura e enriquecedora.
+                
+                    Confie na experiência de quem entende de viagens. Vamos criar juntos momentos inesquecíveis!
                 </ul>
             </div>
-        </nav>
-        <div class="item-form">
-            <form role="search">
-                <input type="search" class="form-control" placeholder="Procurar..." aria-label="Procurar">
-            </form>
-        </div>
-    </header>
+        </section>
+    
+        <!-- Seção de Depoimentos -->
+        <section id="depoimentos" class="depoimentos">
+            <h2>O que nossos clientes dizem</h2>
+            <blockquote>
+                <p>"Tivemos a viagem dos sonhos graças à [Nome da Agência]! Cada detalhe foi perfeito."</p>
+                <footer>— Maria e João</footer>
+            </blockquote>
+            <blockquote>
+                <p>"A equipe é incrível! Planejaram tudo de forma impecável."</p>
+                <footer>— Ana Carolina</footer>
+            </blockquote>
+        </section>
+    </main>
+    
+
+
+
+
+    
     
 
 
@@ -80,6 +385,30 @@
 
 
 
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
 </body>
 </html>
