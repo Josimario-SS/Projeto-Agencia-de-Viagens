@@ -136,35 +136,71 @@
             <h2>Passagens aéreas</h2>
             <div class="div-container">
                 <button class="button" type="button">
-                    <a class="linkbutton" href="#destinos" >Ida e Volta</a>
+                    <a class="link-button" href="#destinos" >Ida e Volta</a>
                 </button>
                 <button class="button" type="button">
-                    <a href="#destinos" class="linkbutton">Só ida</a>
+                    <a href="#destinos" class="link-button">Só ida</a>
                 </button>
                 <button class="button" type="button">
-                    <a href="#destinos" class="linkbutton">Multidestino</a>
+                    <a href="#destinos" class="link-button">Multidestino</a>
                 </button>
             </div>
 
             <div>
                 <form action="">
                     <div class="container-form container">
-                        <div class="container row">
+
+                        <div class="container container-label">
                             <label for="" class="col">Origem</label>
-                            <input type="text" name="" id="" placeholder="   São Paulo, SP" class="col-8 label-form"><br>
+                            <input type="text" name="" id="" placeholder="   São Paulo, SP" class="col-8 col-sm-12 label-form"><br>
                         </div>
 
-                        <div class="button-form">
-                            <button type="button" id="button-form" title="Alternar para Destino x Origem">
-                                <span class="material-symbols-outlined swap">
-                                    swap_vert
-                                    </span>
-                            </button>
-                        </div>
+                        
 
-                        <div class="container row">
+                        <div class="container">
                             <label for="" class="col">Destino</label>
                             <input type="text" name="" id="" placeholder="   Insira sua cidade de destino" class="col-8 label-form">
+                        </div>
+
+
+
+                        <div class="container container-date">
+                            <div class="row item-date" style="width: 100%;">
+                                <small><b>Ida</b></small>
+                                <input type="date" name="" id="" placeholder="   Ida" class="label-date col">
+                            </div>
+                            
+                            <div class="row item-date" style="width: 100%;">
+                                <small><b>Volta</b></small>
+                                <input type="date" name="" id="" placeholder="   Volta" class="label-date col">
+                            </div>
+                        </div>
+
+                        <div class="container container-number">
+                            <div class="item-number p-3">
+                                
+                                <small>
+                                    <b>
+                                        <span class="material-symbols-outlined">
+                                            person
+                                        </span>
+                                        PASSAGEIROS E CLASSES
+                                    </b>
+                                </small>
+                                <input type="number" name="" id="" id="id-number" class="col-12 p-2" placeholder="Uma pessoa, Economica" style="border: none; flex: auto;">
+                            </div>
+                        </div>
+
+
+                        <div class="container container-search">
+                            <div class="item-search">
+                                <button type="submit" class="button-search">
+                                    <span class="material-symbols-outlined" >
+                                        search
+                                    </span>
+                                    Procurar
+                                </button>
+                            </div>
                         </div>
                         
                         
@@ -177,7 +213,7 @@
         <!-- Seção de Cupons -->
         <section>
             <h2>Cupons de Desconto Imperdiveis</h2>
-            <div class="container-cupons">
+            <div class="container-cupons container">
                 <div class="item-cupom">
                     <img src="../imagens/cupom1.jpg" alt="Cupom de desconto" width="300px" class="img-fluid">
                 </div>
@@ -189,8 +225,10 @@
     
         <!-- Seção de Destinos -->
         <section class="destinos">
-            <h2>Destinos Populares</h2>
-            <div class="grid-destinos">
+            <h2 class="fs-1 fw-bold">Passagens Aéreas Internacionais</h2>
+            <p style="font-size: 1.2rem; font-weight: 700;">Confira os melhores preços e viaja que dá!</p>
+
+            <div class="grid-destinos container">
                 <article class="item-destino card" style="text-align: left;">
                     <a href="#" class="link-destino">
                         <img src="../imagens/img-paris.jpg" alt="Torre Eiffel, Paris" width="400px" class="img-fluid" title="Paris, França">
@@ -273,11 +311,27 @@
                         </small>
                         <button class="button-destino" type="button">Confira</button>
                     </div>
+
+                    
                 </article>
+
+                <div class="container container-link-ofertas">
+                    <div >
+                        <a href="#" class="link-ofertas">
+                            Ver mais ofertas
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <h2 class="fs-1 fw-bold">Trechos Nacionais mais buscados</h2>
+                <p class="fs-5 fw-bold ">Parcele em até 12x iguais! Viaja que dá!</p>
                 <article class="item-destino card" style="text-align: left;">
                     <a href="#" class="link-destino">
-                        <img src="../imagens/img-rio.jpg" alt="Rio de Janeiro, BR" width="400px" class="img-fluid" title="Foto de Nova York">
-                        <h3>Rio de Janeiro, BR</h3>
+                        <img src="../imagens/img-rio.jpg" alt="Rio de Janeiro, RJ" width="400px" class="img-fluid" title="Rio de Janeiro, RJ">
+                        <h3>Rio de Janeiro, RJ</h3>
                     </a>
                     <p>Relaxe com paisagens paradisíacas,<br> além das belas praias na cidade maravilhosa.</p>
 
@@ -301,77 +355,190 @@
                         <button class="button-destino" type="button">Confira</button>
                     </div>
                 </article>
+
+
+                <article class="item-destino card" style="text-align: left;">
+                    <a href="#" class="link-destino">
+                        <img src="../imagens/img-sp.jpg" alt="São Paulo, SP" width="400px" class="img-fluid" title="São Paulo, SP">
+                        <h3>São paulo, SP</h3>
+                    </a>
+                    <p>Uma cidade vibrante que nunca dorme, <br>repleta de cultura, gastronomia de classe mundial</p>
+
+                    <div style="padding-bottom: 20px; padding-left: 15px;" class="container-small">
+                        <small style="color: rgba(0, 0, 0, 0.705);" >
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span>
+                                Aéreo Ida e Volta <br>
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span> Voo direto <br>
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span> Saída: 10/10/2020
+                            <br><br><br>
+                            a partir de <br>
+                             <b style="font-size: 1.2em;">R$</b>
+                             <b style="font-size: 1.6em;">759,99</b>
+                        </small>
+                        <button class="button-destino" type="button">Confira</button>
+                    </div>
+                </article>
+
+                <article class="item-destino card" style="text-align: left;">
+                    <a href="#" class="link-destino">
+                        <img src="../imagens/recife.jpg" alt="Recife, SE" width="400px" class="img-fluid" title="Recife, SE">
+                        <h3>Recife, SE</h3>
+                    </a>
+                    <p>Encanta com suas pontes, <br>praias paradisíacas e rica história cultural,</p>
+
+                    <div style="padding-bottom: 20px; padding-left: 15px;" class="container-small">
+                        <small style="color: rgba(0, 0, 0, 0.705);" >
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span>
+                                Aéreo Ida e Volta <br>
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span> Voo direto <br>
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span> Saída: 10/10/2020
+                            <br><br><br>
+                            a partir de <br>
+                             <b style="font-size: 1.2em;">R$</b>
+                             <b style="font-size: 1.6em;">759,99</b>
+                        </small>
+                        <button class="button-destino" type="button">Confira</button>
+                    </div>
+                </article>
+                <article class="item-destino card" style="text-align: left;">
+                    <a href="#" class="link-destino">
+                        <img src="../imagens/img-fortaleza.jpg" alt="Fortaleza, SC" width="400px" class="img-fluid" title="Fortaleza, SC">
+                        <h3>Fortaleza, SC</h3>
+                    </a>
+                    <p>Praias deslumbrantes, cultura vibrante e uma vida <br> noturna que promete momentos inesquecíveis.</p>
+
+                    <div style="padding-bottom: 20px; padding-left: 15px;" class="container-small">
+                        <small style="color: rgba(0, 0, 0, 0.705);" >
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span>
+                                Aéreo Ida e Volta <br>
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span> Voo direto <br>
+                            <span class="material-symbols-outlined" style="font-size: 1.2em;">
+                                check
+                            </span> Saída: 10/10/2020
+                            <br><br><br>
+                            a partir de <br>
+                             <b style="font-size: 1.2em;">R$</b>
+                             <b style="font-size: 1.6em;">759,99</b>
+                        </small>
+                        <button class="button-destino" type="button">Confira</button>
+                    </div>
+                </article>
             </div>
 
-            <div class="container">
-                <a href="#">
-                    Veja mais
-                    <span class="material-symbols-outlined">
-                        arrow_forward
-                    </span>
-                </a>
+            <div class="container container-link-ofertas">
+                <div >
+                    <a href="#" class="link-ofertas">
+                        Ver mais ofertas
+                    </a>
+                </div>
             </div>
         </section>
-    
-        <!-- Seção de Serviços -->
-        <section id="servicos" class="container">
-            <div >
-                <h2 class="item-service">Nossos Serviços</h2>
-                <ul class="item-service">
-                    <li>Planejamento de viagens personalizadas</li>
-                    Transformamos seus sonhos em realidade com roteiros feitos sob medida! Nossa equipe dedica atenção especial aos seus gostos, preferências e orçamento, criando viagens únicas e inesquecíveis.
 
-                    O que oferecemos:
 
-                    Consultoria personalizada: Entendemos suas necessidades para planejar cada detalhe.
-
-                    Roteiros exclusivos: Itinerários criados com base nos seus interesses.
-                    Suporte completo: Assistência antes, durante e após a sua viagem.
-
-                    Parcerias de confiança: Trabalhamos com os melhores hotéis, companhias aéreas e guias locais para garantir sua satisfação.
-
-                    Descubra o mundo do seu jeito, no seu ritmo. Viaje com conforto, segurança e experiências que serão lembradas para sempre.
-                    
-                    <li>Pacotes turísticos exclusivos</li>
-                    Viaje com estilo e descubra destinos únicos com nossos pacotes turísticos exclusivos! Cada detalhe é cuidadosamente planejado para oferecer experiências diferenciadas, que combinam conforto, cultura e aventura.
-                    Por que escolher nossos pacotes?
-                    Destinos selecionados: Roteiros para os lugares mais incríveis e desejados do mundo.
-                    Experiências exclusivas: Passeios personalizados, acesso a atrações especiais e momentos inesquecíveis.
-                    Conforto garantido: Hospedagem em acomodações premium e transporte de qualidade.
-                    Atendimento dedicado: Equipe pronta para cuidar de tudo, para que você só precise aproveitar.
-                    Descubra o melhor que o mundo tem a oferecer com pacotes feitos para quem busca o extraordinário. Viaje mais, viva mais!
-                    <li>Reservas de voos, hotéis e passeios</li>
-                    Organize sua viagem com praticidade e segurança! Oferecemos um serviço completo de reservas para que você tenha tudo planejado em um só lugar.
-                    O que fazemos por você:
-                    Reservamos os melhores voos com as tarifas mais competitivas.
-                    Escolhemos hotéis que combinam conforto, localização e preço.
-                    Planejamos passeios que tornam sua viagem única e inesquecível.
-                    Deixe os detalhes conosco e aproveite sua viagem sem preocupações!
-                    <li>Consultoria com especialistas</li>
-                    Viajar é mais fácil com a orientação certa! Nossa consultoria com especialistas em viagens garante que você tenha o roteiro perfeito para suas necessidades e desejos.
-                    Por que contar com nossos especialistas?
-                    Conhecimento profundo sobre destinos ao redor do mundo.
-                    Planejamento personalizado para atender às suas expectativas.
-                    Dicas e orientações que tornam sua experiência mais segura e enriquecedora.
-                
-                    Confie na experiência de quem entende de viagens. Vamos criar juntos momentos inesquecíveis!
-                </ul>
-            </div>
-        </section>
     
         <!-- Seção de Depoimentos -->
-        <section id="depoimentos" class="depoimentos">
+        <section id="depoimentos" class="container container-depoimentos">
             <h2>O que nossos clientes dizem</h2>
-            <blockquote>
-                <p>"Tivemos a viagem dos sonhos graças à [Nome da Agência]! Cada detalhe foi perfeito."</p>
-                <footer>— Maria e João</footer>
-            </blockquote>
-            <blockquote>
-                <p>"A equipe é incrível! Planejaram tudo de forma impecável."</p>
-                <footer>— Ana Carolina</footer>
-            </blockquote>
+            <div class="item-depoimentos p-4">
+                <blockquote>
+                    <p><i>"Eu sempre ficava receoso em contratar pacotes de viagem, mas com essa agência foi diferente. Eles me passaram tanta confiança desde o início que resolvi arriscar, e foi a melhor decisão! Fechei uma viagem para a Europa e fiquei impressionado com o nível de organização e suporte. Durante toda a viagem, a equipe esteve disponível para ajudar com qualquer dúvida ou imprevisto. Além disso, os hotéis eram excelentes, e os passeios incluídos foram incríveis. Já estou planejando minha próxima viagem com eles!"</i></p>
+                    <footer class="fw-bold">— Rafael M., Curitiba/PR</footer>
+                </blockquote>
+            </div>
+            <div class="item-depoimentos p-4">
+                <blockquote>
+                    <p><i>"Minha experiência com a agência foi simplesmente incrível! Desde o primeiro contato, a equipe foi super atenciosa e cuidou de todos os detalhes. Reservei um pacote para o Nordeste e não precisei me preocupar com nada – hotel, passeios, transporte, tudo foi impecável. O roteiro foi muito bem planejado, e os guias locais eram extremamente simpáticos e profissionais. Foi uma viagem inesquecível, com momentos únicos que levarei para sempre na memória. Com certeza viajarei com essa agência novamente!"</i></p>
+                    <footer class="fw-bold">— Camila A., São Paulo/SP</footer>
+                </blockquote>
+            </div>
         </section>
+
+
+         <!-- Seção de Mensagens -->
+         <section class="container mt-5 mb-5">
+            <div id="section-menseger" class=" p-3 justify-content-center row">
+                <h2 class="fs-1 fw-bold col-12 " style="color: rgb(0, 0, 167);">Assine nossa newsletter e receba as ofertas</h2>
+                <div class="col-12 item-form-me">
+                    <form action="">
+                        <input class="col-12 p-3" type="text" name="" id="" placeholder="Nome">
+                        <input class="col-12 p-3 mt-2" type="email" name="" id="" placeholder="Email">
+                    </form>
+                    <button class="button-me w-100 mt-3 p-2" type="submit">Assinar</button>
+                    
+                </div>
+                <div class="p-3 mt-2">
+                    <small>Ao concordar você aceita em receber comunicações, ofertas e compartilhar seus dados pessoais com (Agência) e empresas parceiras.Para mais informações, consulte as políticas de privacidade</small>
+                </div>
+            </div>
+        </section>
+
+        
     </main>
+
+    <!-- Rodapé da página-->
+         
+    <footer class="container">
+        <div id="container-footer" >
+            <nav>
+                <div>
+                    <h2 class="ps-0" id="h2-footer">Navegue</h2>
+                    <a href="#" target="_blank" class="item-nav">Destinos Populares</a><br>
+                    <a href="#" target="_blank" class="item-nav">Pacotes de Viagem</a><br>
+                    <a href="#" target="_blank" class="item-nav">Promoções</a><br>
+                    <a href="#" target="_blank" class="item-nav">Blog de Viagem</a>
+                </div>
+            </nav>
+
+            <div>
+                <h2 class="ps-0" id="h2-footer">Contato</h2>
+                <p class="ps-0"><b>Telefone: </b>+55 (11) 1234-5678</p>
+                <p class="ps-0"><b>E-mail: </b><a href="#" class=""> contato@viagensincriveis.com</a></p>
+                <p class="ps-0"><b>Suporte Online: </b><a href="#">Clique aqui</a></p>
+            </div>
+
+            <nav>
+                <div>
+                    <h2 class="ps-0" id="h2-footer">Sobre Nós</h2>
+                    <a href="#" target="_blank" class="item-nav">Quem somos</a><br>
+                    <a href="#" target="_blank" class="item-nav">Política de Privacidade</a><br>
+                    <a href="#" target="_blank" class="item-nav">Termos de Uso</a><br>
+                    <a href="#" target="_blank" class="item-nav">trabalhe Conosco</a>
+                </div>
+            </nav>
+
+            <div class="mb-5">
+                <h2 class="ps-0" id="h2-footer" >Siga-nos</h2>
+                <p class="ps-0"><b>Redes Sociais:</b></p>
+                <a href="#" target="_blank" class="item-nav">Instagram</a><br>
+                <a href="#" target="_blank" class="item-nav">Facebook</a><br>
+                <a href="#" target="_blank" class="item-nav">Twitter</a><br>
+                <a href="#" target="_blank" class="item-nav">YouTube</a>
+            </div>
+
+            <div>
+                <p >
+                    © 2025 Viagens Incríveis - Todos os direitos reservados. <br>
+                    "Descubra o mundo com quem entende de viajar!"
+                </p>
+            </div>
+        </div>
+    </footer>
     
 
 

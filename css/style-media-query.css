@@ -2,7 +2,9 @@
 
 
 /*CSS das media query para pequenas telas */
-@media screen and (max-width: 600px) and (min-width: 100px) { 
+@media screen  and (min-width: 100px) and (max-width: 600px) { 
+
+
     /*CSS do nav*/
     ul {
         width: 100%;
@@ -50,8 +52,6 @@
     
     /*CSS da seção destaque*/
     #banner-destaque {
-        
-
         background-image: url('../imagens/banner-destaque-pq.jpg');
         background-repeat: no-repeat;
         background-position: center;
@@ -67,7 +67,7 @@
         width: 100%;
         padding-top: 20px;
         border-radius: 10px;
-        background-color: #0191DA;
+        background-color: #0192da;
         color: #fff;
         margin-top: 10px;
     
@@ -93,7 +93,7 @@
         border-bottom: 2px solid #fff;
         transition: 0.10s;
     }
-    .linkbutton {
+    .link-button {
         text-decoration: none;
         color: #fff; 
     }
@@ -106,31 +106,87 @@
     .label-form {
         height: 60px; 
         border-radius: 5px; 
-        border: 1px solid black; 
+
         margin-bottom: 15px;
         margin-top: 10px; 
         
         margin-left: 5px;
-    }
-    #button-form {
-        border: none;
-        background-color: #0191DA;
-        color: #fff;
-        margin-left: 38px;
-    }
-    .button-form:hover {
-        color: aliceblue;
+        border: 1px solid black;
     }
 
-    .button-form {
+
+    .container-label {
         width: 100%;
-        height: 29px;
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-start;
-        margin-top: 1px;
-        margin-bottom: 1px;
-        margin-left: 1px;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .container-date {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background-color: #ffffff;
+        color: rgba(0, 0, 0, 0.541);
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .label-date {
+        height: 50px; 
+        border-radius: 5px; 
+        border: 1px solid rgba(0, 0, 0, 0.308);
+        margin-bottom: 10px;
+        align-self: center;
+
+    }
+
+
+    .container-number {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .item-number {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        color: rgba(0, 0, 0, 0.575);
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+        border-radius: 10px;
+
+
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+
+
+    .container-search {
+        display: flex;
+        flex-flow: row row;
+        justify-content: center;
+        padding: 10px;
+        margin: 20px;
+    }
+    .item-search {
+        width: 100%;
+    }
+    .button-search {
+        width: 100%;
+        padding: 5px;
+        border-radius: 50px;
+        border: none;
+        background-color: #dd9700;
+        color: #fff;
+    }
+    .button-search:hover {
+        background-color: rgb(255, 187, 0);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+        margin-top: -5px;
+        margin-bottom: 5px;
+        transition: 0.1s;
     }
 
 
@@ -138,7 +194,7 @@
     /*CSS da seção cupons*/
     .container-cupons {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         justify-content: center;
     }
     .item-cupom {
@@ -149,6 +205,8 @@
     /*CSS da seção destinos*/
     h2 {
         padding: 20px;
+        font-weight: 700;
+
     }
     h3, p {
         padding-left: 20px;
@@ -199,6 +257,52 @@
     }
     .item-service {
         align-self: center;
+    }
+
+
+
+    /*CSS seção depoimentos */
+    .container-depoimentos {
+        display: flex;
+        flex-flow: column wrap;
+        border-top: 1px solid black;
+
+    }
+    .item-depoimentos {
+        border: 2px solid rgba(0, 0, 0, 0.466);
+        border-radius: 10px;
+    }
+
+
+    /*CSS seção Mensagens */
+
+    #section-menseger {
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        max-width: 600px;
+
+    }
+    .button-me {
+        border: none;
+        border-radius: 5px;
+        font-weight: 500;
+        color: #fafdff;
+        background-color: #dd9700;
+    }
+    .button-me:hover {
+        background-color: #ffc400;
+        transition: 0.5s;
+    }
+
+
+    /* CSS do rodapé */
+    #container-footer {
+        max-width: 500px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
     }
 }
 /* CSS do menu responsivo */
