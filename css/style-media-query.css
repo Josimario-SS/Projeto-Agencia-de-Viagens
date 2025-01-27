@@ -1,5 +1,3 @@
-/* Todas as demais midias */
-
 
 /*CSS das media query para pequenas telas */
 @media screen  and (min-width: 100px) and (max-width: 600px) { 
@@ -8,7 +6,7 @@
     /*CSS do nav*/
     ul {
         width: 100%;
-        margin-left: 0px;
+        margin-right: 0px;
     }
     .li-container {
         display: flex; 
@@ -66,11 +64,17 @@
     .destaque {
         width: 100%;
         padding-top: 20px;
-        border-radius: 10px;
-        background-color: #0192da;
+        border-radius: 5px;
+        background-color: #006eff;
         color: #fff;
-        margin-top: 10px;
+
     
+    }
+    .item-destaque {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin-bottom: 5px;
     }
     h1 {
         padding: 20px;
@@ -84,9 +88,10 @@
 
     }
     .button {
-        border: none;
-        background-color: #0191DA;
-        padding-bottom: 10px;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        background-color: #006eff;
+        padding: 7px;
         
     }
     .button:hover {
@@ -102,16 +107,6 @@
         display: flex;
         flex-flow: column wrap;
         justify-content: space-around;
-    }
-    .label-form {
-        height: 60px; 
-        border-radius: 5px; 
-
-        margin-bottom: 15px;
-        margin-top: 10px; 
-        
-        margin-left: 5px;
-        border: 1px solid black;
     }
 
 
@@ -131,6 +126,370 @@
         color: rgba(0, 0, 0, 0.541);
         margin-bottom: 20px;
         border-radius: 10px;
+    }
+    .item-date {
+        width: 100%;
+    }
+    .label-date {
+        height: 50px; 
+        border-radius: 5px; 
+        border: 1px solid rgba(0, 0, 0, 0.308);
+        margin-bottom: 10px;
+        align-self: center;
+
+    }
+
+
+    .container-number {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .item-number {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        color: rgba(0, 0, 0, 0.575);
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+        border-radius: 10px;
+
+
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+
+
+    .container-search {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding: 10px;
+        margin: 20px;
+    }
+    .item-search {
+        width: 100%;
+    }
+    .button-search {
+        width: 100%;
+        padding: 5px;
+        border-radius: 50px;
+        border: none;
+        background-color: #dd9700;
+        color: #fff;
+    }
+    .button-search:hover {
+        background-color: rgb(255, 187, 0);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+        margin-top: -5px;
+        margin-bottom: 5px;
+        transition: 0.1s;
+    }
+
+
+
+    /*CSS da seção cupons*/
+    .container-cupons {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    .item-cupom {
+        align-self: center;
+    }
+
+
+    /*CSS da seção destinos*/
+    h2 {
+        padding: 20px;
+        font-weight: 700;
+
+    }
+    h3, p {
+        padding-left: 20px;
+    }
+    .grid-destinos {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        
+    }
+    .item-destino {
+        margin-top: 10px;
+        text-align: left;
+        border: 2px solid black;
+        border-radius: 10px;
+        align-self: center;
+
+    }
+    .link-destino {
+        text-decoration: none;
+    }
+    .container-small {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        padding-bottom: 20px; 
+        padding-left: 15px;
+
+        
+    }
+    .button-destino {
+        padding: 5px; 
+        width: 90px; 
+        height: 40px;
+        border-radius: 5px; 
+        color: rgb(255, 255, 255); 
+        background-color: #0066ffad; 
+        border: none; 
+        font-weight: 500; 
+        align-self: flex-end;
+    }
+
+
+    /*CSS da seção serviços */
+    .servicos {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .item-service {
+        align-self: center;
+    }
+
+
+
+    /*CSS seção depoimentos */
+    .container-depoimentos {
+        display: flex;
+        flex-flow: column wrap;
+        border-top: 1px solid black;
+
+    }
+    .item-depoimentos {
+        border: 2px solid rgba(0, 0, 0, 0.466);
+        border-radius: 10px;
+    }
+
+
+    /*CSS seção Mensagens */
+
+    #section-menseger {
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        max-width: 1000px;
+
+    }
+    .button-me {
+        border: none;
+        border-radius: 5px;
+        font-weight: 500;
+        color: #fafdff;
+        background-color: #dd9700;
+    }
+    .button-me:hover {
+        background-color: #ffc400;
+        transition: 0.5s;
+    }
+
+
+    /* CSS do rodapé */
+    #container-footer {
+        max-width: 500px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        margin: 0px 10px 0px 10px;
+    }
+    .item-nav {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+    #h2-footer {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+
+
+
+
+/* CSS do menu responsivo */
+
+@media screen and (min-width: 600px) {
+    #burguer {
+        display: none;
+        width: 90%;
+        font-size: 28px;
+    }
+
+    menu {
+        display: block;
+        text-align: left;
+        
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    a {
+        margin-left: 10px;
+        padding: 10px 30px 10px 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABLET */
+@media screen  and (min-width: 601px) and (max-width: 992px) { 
+
+
+    /*CSS do nav*/
+    ul {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .container-ul {
+        padding-left: 0px;
+    }
+    .li-container {
+        width: 114px;
+        height: 61px;
+        color: black;
+        text-align: center;
+
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .li-container:hover {
+        border-bottom: 3px solid rgb(0, 89, 255);
+    }
+    .anchor-nav {
+        width: 100%;
+        color: black;
+        text-align: center;
+        font-weight: 600;
+        padding-right: 1px;
+        
+    }
+    
+
+    
+    
+    
+
+    
+    /*CSS da seção destaque*/
+    #banner-destaque {
+        background-image: url('../imagens/banner-destaque-pq.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+        opacity: 70%;
+        color: #fff;
+        text-align: left;
+    }
+
+    .destaque {
+        width: 700px;
+        margin: auto;
+        padding-top: 20px;
+        border-radius: 5px;
+        background-color: #006eff;
+        color: #fff;
+
+    }
+    .item-destaque {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin-bottom: 5px;
+    }
+    h1 {
+        padding: 20px;
+        
+    }
+    
+    
+    .button {
+        border: 2px solid #fff;
+        border-radius: 20px;
+        background-color: #006eff;
+        padding: 7px;
+        
+    }
+    .button:hover {
+        border-bottom: 2px solid #fff;
+        transition: 0.10s;
+    }
+    .link-button {
+        text-decoration: none;
+        color: #fff; 
+    }
+
+    .container-form {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+
+
+    .container-label {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .container-date {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background-color: #ffffff;
+        color: rgba(0, 0, 0, 0.541);
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .item-date {
+        width: 100%;
     }
     .label-date {
         height: 50px; 
@@ -194,7 +553,7 @@
     /*CSS da seção cupons*/
     .container-cupons {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
         justify-content: center;
     }
     .item-cupom {
@@ -211,30 +570,45 @@
     h3, p {
         padding-left: 20px;
     }
-    .grid-destinos {
+    .destino {
         display: flex;
         flex-flow: column wrap;
-        justify-content: center;
+    }
+    .grid-destinos {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
         
     }
     .item-destino {
-        margin-top: 10px;
-        text-align: center;
+        padding-bottom: 10px;
+        text-align: left;
         border: 2px solid black;
         border-radius: 10px;
-        align-self: center;
+        margin: 0px 1px 0px 1px;
 
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    .img-card {
+        width: 600px;
+        padding: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
     .link-destino {
         text-decoration: none;
+        padding: 0px;
+        margin-left: 0px;
     }
     .container-small {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        margin-bottom: 10px;
-
-        
+        margin-bottom: 5px;
+        padding-bottom: 20px;
+        padding-left: 15px;
     }
     .button-destino {
         padding: 5px; 
@@ -246,6 +620,7 @@
         border: none; 
         font-weight: 500; 
         align-self: flex-end;
+        margin-top: 1px;
     }
 
 
@@ -262,15 +637,15 @@
 
 
     /*CSS seção depoimentos */
-    .container-depoimentos {
+    .container-depoimentos-2 {
         display: flex;
-        flex-flow: column wrap;
-        border-top: 1px solid black;
-
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
     }
     .item-depoimentos {
         border: 2px solid rgba(0, 0, 0, 0.466);
         border-radius: 10px;
+        margin: 0px 0px 0px 5px;
     }
 
 
@@ -281,7 +656,379 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        max-width: 600px;
+    }
+    .button-me {
+        border: none;
+        border-radius: 5px;
+        font-weight: 500;
+        color: #fafdff;
+        background-color: #dd9700;
+    }
+    .button-me:hover {
+        background-color: #ffc400;
+        transition: 0.5s;
+    }
+
+
+    /* CSS do rodapé */
+    
+    #container-footer {
+        margin: 0px 10px 0px 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    .item-nav {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+    }
+    #h2-footer {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS das media querys para DESKTOP e grandes telas*/
+@media screen and (min-width: 993px) {
+
+    /*CSS do nav*/
+    ul {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .container-ul {
+        padding-left: 0px;
+    }
+    .li-container {
+        width: 114px;
+        height: 61px;
+        color: black;
+        text-align: center;
+
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .li-container:hover {
+        border-bottom: 3px solid rgb(0, 89, 255);
+    }
+    .anchor-nav {
+        width: 100%;
+        color: black;
+        text-align: center;
+        font-weight: 600;
+        padding-right: 1px;
+        
+    }
+    
+
+    
+    
+    
+
+    
+    /*CSS da seção destaque*/
+    #banner-destaque {
+        background-image: url('../imagens/banner-destaque-pq.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        opacity: 70%;
+        color: #fff;
+        text-align: left;
+    }
+
+    .destaque {
+        max-width: 1100px;
+        margin: auto;
+        padding-top: 0px;
+        border-radius: 5px;
+        background-color: #006eff;
+        color: #fff;
+
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    #destaque {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-bottom: 10px;
+    }
+    .item-destaque {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin-bottom: 5px;
+    }
+    h1 {
+        padding: 20px;
+        
+    }
+    
+    
+    .button {
+        border: 2px solid #fff;
+        border-radius: 20px;
+        background-color: #006eff;
+        padding: 7px;
+        
+    }
+    .button:hover {
+        border-bottom: 2px solid #fff;
+        transition: 0.10s;
+    }
+    .link-button {
+        text-decoration: none;
+        color: #fff; 
+    }
+
+
+    #container-form {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        margin-right: 10px;
+    }
+    .container-form {
+        margin-bottom: -100px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+
+    }
+
+
+    .container-label {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .container-date {
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        background-color: #ffffff;
+        color: rgba(0, 0, 0, 0.541);
+        margin-top: -10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    #item-date {
+        height: 94px;
+        width: 63%;
+    }
+    .label-date {
+        height: 56px; 
+        border-radius: 5px; 
+        border: 1px solid rgba(0, 0, 0, 0.308);
+        margin-bottom: 10px;
+        align-self: center;
+
+    }
+
+
+    .container-number {
+        width: 100%;
+        height: 184px;
+        display: flex;
+        flex-flow: column nowrap;
+
+    }
+    #item-number {
+        margin-top: -9px;
+    }
+    .item-number {
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+        color: rgba(0, 0, 0, 0.575);
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+        border-radius: 10px;
+
+
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    #container-passagem {
+        height: 189px;
+        margin-top: -10px;
+        margin-left: 5px;
+    }
+
+
+    .container-search {
+        display: flex;
+        flex-flow: row row;
+        justify-content: center;
+        padding: 10px;
+        margin: 20px;
+    }
+    .item-search {
+        text-align: center;
+        width: 100%;
+    }
+    .button-search {
+        width: 50%;
+        padding: 5px;
+        border-radius: 50px;
+        border: none;
+        background-color: #dd9700;
+        color: #fff;
+    }
+    .button-search:hover {
+        background-color: rgb(255, 187, 0);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
+        margin-top: -5px;
+        margin-bottom: 5px;
+        transition: 0.1s;
+    }
+
+
+
+    /*CSS da seção cupons*/
+    .container-cupons {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+    .item-cupom {
+        align-self: center;
+    }
+
+
+    /*CSS da seção destinos*/
+    h2 {
+        padding: 20px;
+        font-weight: 700;
+
+    }
+    h3, p {
+        padding-left: 20px;
+    }
+    .destino {
+        
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .grid-destinos {
+        max-width: 1270px;
+        margin: auto;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        
+    }
+    .item-destino {
+        padding-bottom: 10px;
+        text-align: left;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 0px 1px 0px 1px;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    .img-card {
+        width: 600px;
+        padding: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .link-destino {
+        text-decoration: none;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    .container-small {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-bottom: 5px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+    }
+    .button-destino {
+        padding: 5px; 
+        width: 90px; 
+        height: 40px;
+        border-radius: 5px; 
+        color: rgb(255, 255, 255); 
+        background-color: #0066ffad; 
+        border: none; 
+        font-weight: 500; 
+        align-self: flex-end;
+        margin-top: 1px;
+    }
+
+
+    /*CSS seção depoimentos */
+    .container-depoimentos-2 {
+        max-width: 1270px;
+        margin: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+    .h2-dep {
+        padding-right: 78px;
+    }
+    .item-depoimentos {
+        border: 2px solid rgba(0, 0, 0, 0.466);
+        border-radius: 10px;
+        margin: 0px 0px 0px 5px;
+    }
+
+
+    /*CSS seção Mensagens */
+
+    #section-menseger {
+        max-width: 1000px;
+        margin: auto;
+        background-color: #fff;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        max-width: 800px;
 
     }
     .button-me {
@@ -298,85 +1045,22 @@
 
 
     /* CSS do rodapé */
+    
     #container-footer {
-        max-width: 500px;
+        margin: 0px 10px 0px 10px;
         display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-end;
+        flex-flow: row wrap;
+        justify-content: space-around;
     }
-}
-/* CSS do menu responsivo */
-
-@media screen and (min-width: 758px) {
-    #burguer {
-        display: none;
-        width: 90%;
-        font-size: 28px;
-    }
-
-    menu {
-        display: block;
-        text-align: left;
-        
-    }
-
-    menu > ul > li {
-        display: inline-block;
-    }
-
-    a {
-        margin-left: 10px;
-        padding: 10px 30px 10px 30px;
-    }
-}
-
-
-
-
-
-
-
-
-
-/* TABLET */
-@media screen and (min-width: 600px)/* and (max-width: 992px)*/ {
-    li {
-        background-color: #e9eaec9f;
-        margin-bottom: 5px;
-        margin-right: 5px;
-        text-align: center;
+    .item-nav {
         color: black;
-        border-radius: 3px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
     }
-    li:hover {
-        background-color: #fafdff;
-        border: 1px solid black;
-        border-radius: 5px;
-        box-shadow: 0px 1px 10px rgba(56, 137, 243, 0.507);
-        transition: 0.3s;
-        color: white;
+    #h2-footer {
+        font-size: 1rem;
+        font-weight: 700;
     }
-    
-    form {
-        margin-top: 15px;
-    }
-    
-}
-
-
-
-/* DESKTOP */
-@media screen and (min-width: 992PX) and (max-width: 1200PX) {
 
 }
-
-
-
-/* GRANDES TELAS */
-@media screen and (min-width: 1200PX) {
-
-
-}
-
-
-

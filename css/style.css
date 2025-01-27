@@ -11,24 +11,24 @@
 body {
     
 }
+.container-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 
-/*CSS do cabeçalho*/
-
+}
 main {
     background-color: #F2F4F5;
 }
 nav {
     margin-top: 10px;
 }
-
-
-.container {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-
-    align-items: center;
+.anchor-nav {
+    text-decoration: none;
 }
+
+
+
 
 .item-img {
     width: 70%;
@@ -74,6 +74,7 @@ menu {
 
 span:hover {
     color: rgb(0, 81, 255);
+    transition: 0.2s;
 }
 .swap:hover {
     color: rgb(230, 230, 230);
@@ -88,6 +89,10 @@ span:hover {
 
 #banner-destaque {
     background-image: url('../imagens/banner-destaque-pq.jpg');
+}
+#container-number {
+    margin-top: -10px;
+    border-top: 1px solid black;
 }
 
 
@@ -122,16 +127,7 @@ footer {
     padding-top: 20px;
 }
 
-.item-nav {
-    color: black;
-    text-decoration: none;
-    display: block;
-    font-size: 1rem;
-}
-#h2-footer {
-    font-size: 1.3rem;
-    font-weight: 700;
-}
+
 
 
 
