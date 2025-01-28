@@ -18,6 +18,7 @@
 
 </head>
 <body>
+    
 
     <header class="p-2">
         <div class="container container-header">
@@ -108,13 +109,53 @@
     <main>
         
         <!-- Seção de Destaque -->
-
-        <section id="banner-destaque" class="col">
-            <div class="pt-5">
-                <h1>Descubra o Mundo com a Gente!</h1>
-                <p>Planeje sua próxima aventura com nossa agência. Oferecemos pacotes incríveis, destinos de tirar o fôlego e experiências inesquecíveis. Seu sonho começa aqui!</p>
+        <div id="myCarousel" class="carousel slide mb-6 container-fluid" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Diapositivo 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Diapositivo 2" class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Diapositivo 3" class=""></button>
             </div>
-        </section>
+            <div class="carousel-inner">
+                <div class="carousel-item active img-carousel-1">
+                    <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Título de exemplo.</h1>
+                        <p class="opacity-90">Estudos estatísticos segundo a American Language Association indicam que a procura de árabe aumentou 126% só nos Estados Unidos da América entre 2002 e 2009 DC.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Registre-se hoje</a></p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item img-carousel-2">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Outro título de exemplo.</h1>
+                            <p>De acordo com o British Council, ensinar inglês na Grã-Bretanha contribui para fortalecer a sua economia em mais de dois mil milhões de libras anuais e criou mais de 26 mil empregos.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">saber mais</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item img-carousel-3">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Mais um para garantir.</h1>
+                            <p>As estatísticas sobre o volume de investimento linguístico fora da Grã-Bretanha variam de ano para ano, mas o Diretor Executivo do British Council, Eddie Byers, acredita que o investimento no ensino de inglês no estrangeiro não é calculado apenas a nível financeiro, mas também a nível político.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Navegue pela galeria</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">o </span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">o próximo</span>
+            </button>
+          </div>
 
         <section class="destaque">
             <div id="destaque">
