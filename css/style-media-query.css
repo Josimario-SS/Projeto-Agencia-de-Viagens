@@ -2,6 +2,9 @@
 /*CSS das media query para pequenas telas */
 @media screen  and (min-width: 100px) and (max-width: 600px) { 
 
+    .link-h {
+        padding: 15px;
+    }
 
     /*CSS do nav*/
     ul {
@@ -65,6 +68,7 @@
         max-width: 600px;
         background-position: center;
         background-repeat: no-repeat;
+
     }
     .img-carousel-2 {
         background-image: url("../imagens/carousel-02.jpg");
@@ -246,17 +250,7 @@
 
         
     }
-    .button-destino {
-        padding: 5px; 
-        width: 90px; 
-        height: 40px;
-        border-radius: 5px; 
-        color: rgb(255, 255, 255); 
-        background-color: #0066ffad; 
-        border: none; 
-        font-weight: 500; 
-        align-self: flex-end;
-    }
+    
 
 
     /*CSS da seção serviços */
@@ -386,6 +380,7 @@
 /* TABLET */
 @media screen  and (min-width: 601px) and (max-width: 992px) { 
 
+    
 
     /*CSS do nav*/
     ul {
@@ -437,14 +432,14 @@
     }
     .img-carousel-1 {
         background-image: url("../imagens/carousel-01.jpg");
-        height: 600px;
+        height: 400px;
         min-width: 600px;
         max-width: 992px;
         background-position: center;
     }
     .img-carousel-2 {
         background-image: url("../imagens/carousel-02.jpg");
-        height: 600px;
+        height: 400px;
         min-width: 600px;
         max-width: 992px;
         background-position: center;
@@ -452,7 +447,7 @@
     }
     .img-carousel-3 {
         background-image: url("../imagens/carousel-03.jpg");
-        height: 600px;
+        height: 400px;
         min-width: 600px;
         max-width: 992px;
         background-position: center;
@@ -632,15 +627,6 @@
         padding-left: 15px;
     }
     .button-destino {
-        padding: 5px; 
-        width: 90px; 
-        height: 40px;
-        border-radius: 5px; 
-        color: rgb(255, 255, 255); 
-        background-color: #0066ffad; 
-        border: none; 
-        font-weight: 500; 
-        align-self: flex-end;
         margin-top: 1px;
     }
 
@@ -740,6 +726,9 @@
 /*CSS das media querys para DESKTOP e grandes telas*/
 @media screen and (min-width: 993px) {
 
+    .cadastro {
+        margin-top: 35px;
+    }
     /*CSS do nav*/
     ul {
         width: 100%;
@@ -793,20 +782,21 @@
     }
     .img-carousel-1 {
         background-image: url("../imagens/carousel-01.jpg");
-        height: 500px;
+        height: 450px;
         width: 800px;
         min-width: 992px;
         background-position: center;
     }
     .img-carousel-2 {
         background-image: url("../imagens/carousel-02.jpg");
-        height: 500px;
+        height: 450px;
         min-width: 992px;
         background-position: center;
     }
     .img-carousel-3 {
+        margin-top: 10px;
         background-image: url("../imagens/carousel-03.jpg");
-        height: 500px;
+        height: 450px;
         min-width: 992px;
         background-position: center;
     }
@@ -1018,15 +1008,6 @@
         padding-left: 15px;
     }
     .button-destino {
-        padding: 5px; 
-        width: 90px; 
-        height: 40px;
-        border-radius: 5px; 
-        color: rgb(255, 255, 255); 
-        background-color: #0066ffad; 
-        border: none; 
-        font-weight: 500; 
-        align-self: flex-end;
         margin-top: 1px;
     }
 
